@@ -1,10 +1,18 @@
 {
   "expo": {
+    "name": "Camera",
+    "slug": "Camera",
     "scheme": "acme",
     "plugins": [
-      "expo-router"
-    ],
-    "name": "Camera",
-    "slug": "Camera"
+      [
+        "expo-router"
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
+        }
+      ]
+    ]
   }
 }
